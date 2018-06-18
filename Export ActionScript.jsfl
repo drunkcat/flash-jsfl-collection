@@ -119,7 +119,7 @@ function replaceEntities(str){
 }
 
 function init(){
-	var saveFile = fl.browseForFileURL("save", "Save File");
+	var saveFile = fl.browseForFileURL( "save", "Save File", "HTML (*.html)", "html");
 	if (saveFile) {
 		var templateFile = fl.configURI + "Commands/Export ActionScript/template.html";
 		var str = FLfile.read(templateFile);
